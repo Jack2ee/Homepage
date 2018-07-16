@@ -1,0 +1,14 @@
+member_lounge페이지<br>
+scaffold 만들어서 연결<br>
+devise 로 연결<br>
+
+<% if user_signed_in? %>
+로그인확인<br>
+
+  <li>
+  
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+  </li>
+<% else %>
+  
+<% end %>
